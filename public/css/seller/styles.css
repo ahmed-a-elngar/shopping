@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #131619;
+}
+.main-container{
+    background-color: #fff;
+}
+.main-container .side-section{
+    background-color: #f2ebffaa;
+    width: 225px;
+    float: left;
+    position: fixed;
+    top: 0;
+    height: 630px;
+}
+.main-container .side-section .logo-section{
+    overflow: hidden;
+    padding: 52px 25px;
+    margin: auto;
+}
+.main-container .side-section .logo-section img{
+    height: 36px;
+    width: 72px;
+    display: block;
+    margin: auto;
+}
+.main-container .side-section .nav-section{
+    overflow: hidden;
+    padding: 92px 0px;
+}
+.main-container .side-section .nav-section li{
+    padding: 12px 16px;
+}
+.main-container .side-section .nav-section li a{
+    opacity: .4;
+}
+.main-container .side-section .nav-section li.active{
+    border-left: 3px solid #ee1144;
+    padding-left: 12px;
+}
+.main-container .side-section .nav-section li.active a{
+    opacity: 1;
+}
+.main-container .side-section .nav-section li a:hover{
+    opacity: 1;
+    color: #131619;
+}
+.main-container .main-section{
+    float: left;
+    width: 82%;
+    margin-left: 225px;
+    padding-top: 25px;
+}
+.main-container .main-section .main-body{
+    width: 900px;
+    margin: auto;
+}
+/* products page */
+.main-container .main-section .head-section h1{
+    font-weight: normal;
+    display: inline-block;
+}
+.main-container .main-section .head-section .new-product{
+    float: right;
+    padding: 8px 16px;
+    background-color: #ee1144;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2px;
+}
+.main-container .main-section .head-section p, .main-container .main-section .head-section p span{
+    color: #b2b2b2;
+    line-height: 30px;
+}
+.main-container .main-section .tab-container{
+    padding-top: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+.main-container .main-section .tab-container div{
+    display: inline-block;
+}
+.main-container .main-section .tab-container .tab-section li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    opacity: .4;
+}
+.main-container .main-section .tab-container .tab-section li.active{
+    border-bottom: 3px solid #ee1144;
+    opacity: 1;
+}
+.main-container .main-section .tab-container .tab-section li:hover{
+    opacity: 1;
+}
+.main-container .main-section .more-section{
+    float: right;
+}
+.main-container .main-section .more-section a{
+    margin-left: 20px;
+}
+.main-container .main-section .more-section #search_products #search-input{
+    padding: 4px 16px;
+    border: 1px solid #b2b2b2;
+    border-radius: 16px;
+    margin-top: -4px;
+    display: none;
+}
+.main-container .main-section .more-section #search_products #close-search-input{
+    display: none;
+    margin-left: 8px;
+ }
+.main-container .main-section #products-container{
+    margin-top: 250px;
+}
+.main-container .main-section #products-container .product,
+.main-container .main-section .products-head{
+    box-shadow: 2px 2px 16px #e0e0e0, -2px -2px 16px #fff;
+    padding: 12px 18px 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.main-container .main-section .products-head p{
+    width: 119px;
+    display: inline-block;
+    padding: 12px 0px;
+    text-align: center;
+}
+.main-container .main-section .orders-items-head p{
+    width: 140px;
+}
+.main-container .main-section #products-container .product div{
+    width: 123px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+.main-container .main-section #products-container .order_item div{
+    width: 144px;
+}
+.main-container .main-section #products-container .product div a{
+    padding-top: 8px;
+    display: inline-block;
+}
+.main-container .main-section #products-container .product .product-img{
+    padding: 0px;
+}
+.main-container .main-section #products-container .product .product-img img{
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+}
+.main-container .main-section #products-container .product a.product-img:hover img{
+    border: 1px solid #ee1144;
+}
+.main-container .main-section #products-container .product a:hover,
+.main-container .main-section #products-container .product .more a:hover i{
+    color: #ee1144;
+}
+.main-container .main-section #products-container .product a:hover strong{
+    color: #ee1144;
+}
+.main-container .main-section #products-container .product .more a{
+    margin-left: 8px;
+    padding: 8px;
+}
+/* new product page */
+form.new-product .input-section{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+form.new-product .input-section label{
+    padding: 8px 0px;
+    display: inline-block;
+}
+form.new-product .input-section input,
+form.new-product .input-section textarea,
+form.new-product .input-section select{
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #b2b2b2;
+    width: 94%;
+}
+form.new-product .input-section .half{
+    width: 48%;
+    float: left;
+}
+form.new-product .input-section .half input{
+    width: 88%;
+}
+form.new-product .input-section .half.first{
+    margin-right: 4%;
+}
+form.new-product .input-section input[type='search'],
+form.new-product .input-section select
+{
+    width: 100%;
+}
+form.new-product .input-section .inline {
+    width: 140px;
+    float: left;
+    margin-right: 8px;
+    overflow: hidden;
+}
+form.new-product .input-section .inline input{
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+    width: fit-content;
+    margin-top: 10px;
+}
+form.new-product #search-reasult{
+    padding: 5px 0px;
+}
+form.new-product #search-reasult a,
+form.new-product #search-reasult p{
+    padding: 10px 16px;
+    border: 1px solid #e0e0e0;
+    display: block;
+}
+form.new-product #search-reasult a I,
+form.new-product i#selected-color{
+    margin-left: 10px;
+    color: #ee1144;
+}
+/*form.new-product #search-reasult a:hover{*/
+/*    background-color: #e0e0e0;*/
+/*}*/
+/*form.new-product #colors-section .selected-color{*/
+/*    display: inline-block;*/
+/*    padding: 6px 8px;*/
+/*    border: 1px solid #e0e0e0;*/
+/*    border-radius: 6px;*/
+/*    margin: 8px 10px 8px 0px;*/
+/*}*/
+form.new-product p.input-missed{
+    color: #ee1144;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
