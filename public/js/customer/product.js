@@ -1,5 +1,5 @@
 // show product details
-$('.product-img .product-details').on('click', function () {
+$(document).on('click', '.product-img .product-details',function () {
     product_id = $(this).attr('data-value');
     $.ajaxSetup({
         headers: {
@@ -38,7 +38,7 @@ function createProductDetails(product, seller, product_quantity, product_color, 
         "        <div class=\"product-details\">\n" +
         "            <h1 class=\"product-name\" title=\"product name\">"+product['name']+"</h1>\n" +
         "            <h1 class=\"product-brand-name\" title=\"seller/brand name\">"+seller['name']+"</h1>\n" +
-        "            <h1 title=\"product price\">\n" +
+        "            <h1 title=\"product price\">\n$" +
                      product['total_price'] +
         "            </h1>\n" +
         "            <!-- product description -->\n" +
@@ -58,7 +58,7 @@ function createProductDetails(product, seller, product_quantity, product_color, 
         "                    Total price:\n" +
         "                </h1>\n" +
         "                <h1 class=\"product-price\" title=\"product price\">\n" +
-        "                    <strong>"+product['total_price']+"</strong>\n" +
+        "                    <strong>$"+product['total_price']+"</strong>\n" +
         "                </h1>\n" +
         "            </div>\n" +
         "            <!-- color section -->\n" +
@@ -132,15 +132,14 @@ function createSingleProduct(product_details) {
     product =
         '                        <div class="product">\n' +
         '                            <div class="product-img">\n' +
-        '                                <a title="product details" class="product-details" data-value="{{'+product_details['id']+'}}">\n' +
-        '                                    <span class="product-new">new</span>\n' +
+        '                                <a title="product details" class="product-details" data-value="'+product_details['id']+'">\n' +
         '                                    <img src="../pics/'+product_details['picture']+'" alt="">\n' +
         '                                </a>\n' +
         '                            </div>\n' +
         '                            <div class="product-details">\n' +
         '                                <h1 class="product-name" title="product name">'+product_details['name']+'</h1>\n' +
         '                                <h1 class="product-price" title="product price">\n' +
-        '                                    <strong>'+product_details['total_price']+'</strong>\n' +
+        '                                    <strong>$'+product_details['total_price']+'</strong>\n' +
         '                                </h1>\n' +
         '                                <h1 class="product-brand-name" title="seller/brand name">'+product_details['owner_name']+'</h1>\n' +
         '                                <div class="add-to-cart">\n' +

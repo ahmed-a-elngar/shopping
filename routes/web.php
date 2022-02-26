@@ -29,6 +29,7 @@ Route::middleware(['auth'])->group(function (){
         // shared between customer & seller
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/', [App\Http\Controllers\RedirectController::class, 'index'])->name('index');
+    Route::get('/out', [App\Http\Controllers\RedirectController::class, 'out'])->name('out');
 
     Route::middleware(['seller'])->group(function (){
         // seller
@@ -39,7 +40,6 @@ Route::middleware(['auth'])->group(function (){
         Route::post('/edit/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('update_product');
         Route::post('/delete/{id}', [App\Http\Controllers\ProductController::class, 'delete'])->name('delete_product');
         Route::post('/search/{input}', [App\Http\Controllers\ProductController::class, 'search'])->name('search_product');
-        Route::get('/out', [App\Http\Controllers\RedirectController::class, 'out'])->name('out');
         Route::get('/orders', [App\Http\Controllers\OrderItemController::class, 'view'])->name('orders');
     });
 

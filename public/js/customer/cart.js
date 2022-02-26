@@ -76,8 +76,13 @@ function subTotals() {
     }
 }
 function updateBill() {
+    quantities = $('.product-quantity');
+    tax = 0;
+    for (let i = 0; i < quantities.length; i++) {
+        tax += parseInt($(quantities[i]).val().trim());
+    }
     subTotals();
     $('.cart-total p').html('<span>$</span>'+sub_totals);
-    $('.tax-amount p').html('<span>$</span>'+sub_totals_elements.length);
+    $('.tax-amount p').html('<span>$</span>'+ tax);
     $('.order-total p').html('<span>$</span>'+(sub_totals + sub_totals_elements.length));
 }

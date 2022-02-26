@@ -113,14 +113,14 @@
                         <div class="product">
                             <div class="product-img">
                                 <a title="product details" class="product-details" data-value="{{$product->id}}">
-                                    <span class="product-new">new</span>
+{{--                                    <span class="product-new">new</span>--}}
                                     <img src="{{asset('pics/'.$product->picture)}}" alt="">
                                 </a>
                             </div>
                             <div class="product-details">
                                 <h1 class="product-name" title="product name">{{$product->name}}</h1>
                                 <h1 class="product-price" title="product price">
-                                    <strong>{{$product->total_price}}</strong>
+                                    <strong>${{$product->total_price}}</strong>
                                 </h1>
                                 @foreach($sellers as $seller)
                                     @if($seller->id == $product->owner)

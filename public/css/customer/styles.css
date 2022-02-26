@@ -219,6 +219,7 @@ body{
     width: 93px;
     float: left;
     overflow: hidden;
+    white-space: nowrap;
 }
 .product .product-details .product-price, .product .add-to-cart, .products-container .products-tag .product-rate{
     text-align: right;
@@ -503,6 +504,7 @@ i.blue{
     width: 100%;
     text-align: left;
     margin: 0px 0px 12px 0px;
+    white-space: nowrap;
 }
 .product-details-cont .product .product-details .product-brand-name{
     color: #131619;
@@ -569,9 +571,11 @@ i.blue{
     padding: 5px 0px;
     display: inline-block;
     width: 84px;
+    white-space: nowrap;
 }
 .product-details-cont .product .product-details h1.pad-8{
     padding: 8px 0px;
+    white-space: nowrap;
 }
 .product-details-cont .product .product-details .product-price strong{
     padding: 0px 2px;
